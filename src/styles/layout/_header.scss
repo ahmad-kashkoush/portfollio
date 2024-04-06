@@ -1,0 +1,23 @@
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+header nav ul {
+  display: flex;
+  gap: 2rem;
+  text-align: center;
+}
+
+header nav li {
+  padding: 1rem 0rem;
+}
+header nav a {
+  text-transform: capitalize;
+  &:hover {
+    color: blue;
+  }
+}
+header nav a .nav__icon {
