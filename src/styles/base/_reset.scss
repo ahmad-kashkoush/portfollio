@@ -26,6 +26,11 @@ a{
         max-width: 768px;
     }
 }
+@media screen and (min-width: 992px){
+    .container {
+        max-width: 950px;
+    }
+}
 
 @media screen and (min-width: 1140px) {
     .container {
