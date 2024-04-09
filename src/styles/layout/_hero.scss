@@ -1,0 +1,40 @@
+//--------[Hero]-------------
+.hero {
+  margin: 5rem auto;
+  padding-bottom: 5rem;
+  position: relative;
+}
+.hero-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .hero-wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+//
+//--------[Hero Content]-------------
+
+.hero-content {
+  margin: auto;
+  text-align: start;
+}
+.hero-content h1 {
+  text-transform: capitalize;
+  font-size: 3rem;
+}
+.hero-content h2 {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+@media (max-width: 992px) {
+  .hero-content {
+    text-align: center;
+  }
+  .content-wrapper {
+    text-align: center;
+  }
+}

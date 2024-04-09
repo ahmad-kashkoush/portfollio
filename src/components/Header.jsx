@@ -26,7 +26,7 @@ export default function Header() {
           </label>
           <ul className="nav">
             <li>
-              <a href="#">
+              <a href="#home">
                 <svg
                   className="nav__icon"
                   xmlns="http://www.w3.org/2000/svg"
