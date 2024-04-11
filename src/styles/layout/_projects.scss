@@ -1,0 +1,37 @@
+.projects {
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+}
+// Projects Gallery
+.projects-gallery {
+    margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+  
+}
+.project-card {
+    transition: 1s ;
+}
+.project-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  justify-self: center;
+  height: 300px;
+  width: 100%;
+}
+.project-card h3{
+    margin: .5rem 0;
+    text-align: center;
+}
+.tech {
+    text-align: center;
+}
+.tech-item {
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 15px;
+    margin: 0 .5rem;
+    padding: .2rem 1rem;
+}
