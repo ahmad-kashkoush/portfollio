@@ -1,0 +1,24 @@
+footer{
+    background-color: black;
+    color: white;
+    padding-bottom: 2rem;
+}
+footer h2{
+    text-align: center;
+    text-transform: capitalize;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+footer ul a{
+    color: white;
+
+}
+footer .social{
+    justify-content: center;
+}
+footer .social a{
+    color: white;
+}
