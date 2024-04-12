@@ -1,0 +1,42 @@
+.contact {
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+}
+// send Message
+.send-message {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+@media (min-width:992px){
+    .send-message{
+        align-items: start;
+    }
+}
+.send-message input {
+  padding: 1rem;
+  width: 80%;
+  border-radius: 10px;
+}
+.send-message textarea {
+  padding: 1rem;
+  width: 80%;
+  height: 127px;
+  resize: none;
+  border-radius: 10px;
+}
+.send-message button {
+  cursor: pointer;
+  width: 200px;
+  height: 52px;
+  margin-top: 0;
+}
+// Social Component
+.contact form + h3 {    
+    margin-top: 2rem;
+}
+.social.social-contact {
+}
+.social.social-contact a {
+}
