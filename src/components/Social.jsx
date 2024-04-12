@@ -1,8 +1,8 @@
-export function Social() {
+export function Social({forContact=false}) {
   return (
     <>
       {/* Icons for media sites */}
-      <div className="social">
+      <div className={`social ${forContact?"social-contact":""}`}>
         <a href="#">
           <i className="fa fa-github "></i>
         </a>
