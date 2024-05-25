@@ -1,5 +1,5 @@
 .contact {
-  margin-top: 5rem;
+  
   padding-bottom: 5rem;
 }
 // send Message
@@ -9,11 +9,11 @@
   gap: 1rem;
   align-items: center;
 }
-@media (min-width:992px){
-    .send-message{
-        align-items: start;
-    }
-}
+// @media (min-width:992px){
+//     .send-message{
+//         align-items: start;
+//     }
+// }
 .send-message input {
   padding: 1rem;
   width: 80%;

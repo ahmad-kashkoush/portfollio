@@ -1,24 +1,32 @@
-.about, section.container {
+.about,
+section.container,
+section > .container {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  text-align: center;
 }
 @media (min-width: 992px) {
-  .about, section.container {
+  .about,
+  section.container {
     text-align: start;
   }
 }
 
-.about h2, .projects h2, .contact h2 {
+.about h2,
+.projects h2,
+.contact h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .about .hero-wrapper {
   margin-top: 2rem;
   gap: 3rem;
 }
-.about-content {
+@media (max-width: 768px) {
+  .about-content {
+    text-align: center;
+  }
 }
 .about-content p {
   &:first-of-type {

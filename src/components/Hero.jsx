@@ -1,10 +1,10 @@
 import { Social } from "./Social";
 import { TechStack } from "./TechStack";
-import resume  from "../assets/AhmedKashkoush_Resume.pdf";
+import resume from "../assets/AhmedKashkoush_Resume.pdf";
 export default function Hero() {
   return (
-    <section className="container hero" id="home">
-      <div className="hero-wrapper">
+    <section className="hero" id="home">
+      <div className="hero-wrapper container ">
         <div className="content-wrapper">
           {/* Content  */}
           <div className="hero-content">
@@ -21,8 +21,8 @@ export default function Hero() {
         </div>
         {/* Image */}
         <div className="hero-image"></div>
+        <TechStack />
       </div>
-      <TechStack />
     </section>
   );
 }

@@ -1,37 +1,36 @@
+@use "src/styles/base" as *;
 .projects {
-    margin-top: 5rem;
-    padding-bottom: 5rem;
+  background-color: $bg-primary;
 }
 // Projects Gallery
 .projects-gallery {
-    margin-top: 2rem;
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1rem;
-  
+  gap: 1rem;
 }
 .project-card {
-    transition: 1s ;
+  transition: 1s;
 }
 .project-img {
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
   border-radius: 10px;
   justify-self: center;
-  height: 300px;
+  height: 400px;
   width: 100%;
 }
-.project-card h3{
-    margin: .5rem 0;
-    text-align: center;
+.project-card h3 {
+  margin: 0.5rem 0;
+  text-align: center;
 }
 .tech {
-    text-align: center;
+  text-align: center;
 }
 .tech-item {
-    border: 1px solid rgba(0, 0, 0, .2);
-    border-radius: 15px;
-    margin: 0 .5rem;
-    padding: .2rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  margin: 0 0.5rem;
+  padding: 0.2rem 1rem;
 }

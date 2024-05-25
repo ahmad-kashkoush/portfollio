@@ -4,28 +4,8 @@ import { useState } from "react";
 import { Filter } from "./Filter";
 import { useEffect } from "react";
 import { ProjectsGallery } from "./ProjectsGallery";
-
+import { myProjects } from "/public/myProjects";
 /* eslint-disable react/prop-types */
-const myProjects = [
-  {
-    id: 1,
-    title: "project 1",
-    tech: ["react", "sass"],
-    img: "https://picsum.photos/200/300",
-  },
-  {
-    id: 2,
-    title: "project 2",
-    tech: ["javascript", "html", "css"],
-    img: "https://picsum.photos/200/400",
-  },
-  {
-    id: 3,
-    title: "project 2",
-    tech: ["javascript", "html", "css"],
-    img: "/src/assets/Profile-Picture.jpeg",
-  },
-];
 
 export default function Projects() {
   /* TODO
@@ -52,10 +32,12 @@ export default function Projects() {
       );
   }, [selectedTap]);
   return (
-    <section className="projects container" id="projects">
-      <h2>projects </h2>
-      <Filter tab={selectedTap} onClickTab={handleClickSelectedTap} />
-      <ProjectsGallery projects={projects} />
+    <section className="projects " id="projects">
+      <div className="container projects-container">
+        <h2>projects </h2>
+        <Filter tab={selectedTap} onClickTab={handleClickSelectedTap} />
+        <ProjectsGallery projects={projects} />
+      </div>
     </section>
   );
 }

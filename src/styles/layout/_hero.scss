@@ -1,12 +1,20 @@
 //--------[Hero]-------------
+@use "src/styles/base" as *;
 .hero {
-  margin: 5rem auto;
-  padding-bottom: 5rem;
-  position: relative;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $bg-primary;
+}
+@media (max-width:768px){
+  .hero{
+    height: 142vh;
+  }
 }
 .hero-wrapper {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 @media (max-width: 992px) {
   .hero-wrapper {

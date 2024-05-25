@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section className="contact container">
+    <section className="contact container" id="contact">
       <h2>contact</h2>
       <SendMessage />
     </section>
