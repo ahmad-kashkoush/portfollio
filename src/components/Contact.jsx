@@ -1,8 +1,10 @@
 export default function Contact() {
   return (
-    <section className="contact container" id="contact">
-      <h2>contact</h2>
-      <SendMessage />
+    <section className="contact" id="contact">
+      <div className="container">
+        <h2>contact</h2>
+        <SendMessage />
+      </div>
     </section>
   );
 }

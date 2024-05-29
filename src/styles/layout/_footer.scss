@@ -1,5 +1,6 @@
+@use "/src/styles/base/" as *;
 footer{
-    background-color: black;
+    background-color: $black-0;
     color: white;
     padding-bottom: 2rem;
 }

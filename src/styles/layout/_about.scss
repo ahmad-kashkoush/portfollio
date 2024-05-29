@@ -1,4 +1,4 @@
-.about,
+@use "src/styles/base" as *;
 section.container,
 section > .container {
   padding-top: 5rem;
@@ -10,13 +10,17 @@ section > .container {
     text-align: start;
   }
 }
-
+.about{
+  background-color: var(--bg-secondary);
+  color: var(--color-primary);
+}
 .about h2,
 .projects h2,
 .contact h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
   text-align: center;
+  color: $blue-0;
 }
 
 .about .hero-wrapper {
@@ -49,7 +53,7 @@ section > .container {
 }
 
 .achieved .box {
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-shadow-color);
   border-radius: 10px;
   text-align: center;
   padding: 1rem 1rem;

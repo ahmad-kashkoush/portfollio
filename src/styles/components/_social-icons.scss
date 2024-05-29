@@ -1,9 +1,16 @@
+@use "/src/styles/base/" as *;
 .social {
   display: flex;
   justify-content: start;
   gap: 1rem;
   font-size: 30px;
   margin-top: 1rem;
+  & a {
+    transition: color $transition;
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
 }
 @media (max-width: 992px) {
   .social {

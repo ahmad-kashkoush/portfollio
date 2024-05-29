@@ -1,36 +1,70 @@
 @use "src/styles/base" as *;
 .projects {
-  background-color: $bg-primary;
+  background-color: var(--bg-primary);
 }
 // Projects Gallery
 .projects-gallery {
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 1rem;
 }
 .project-card {
-  transition: 1s;
+  transition: transform 0.5s ease;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 40px;
+  overflow: hidden;
+}
+.project-card,
+.project-card > * {
+  background-color: var(--bg-secondary);
+  color: var(--color-primary);
+}
+.project-img-wrapper {
+  overflow: hidden;
+  transition: inherit;
 }
 .project-img {
+  background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% 100%;
-  border-radius: 10px;
+  background-size: contain;
+  border-radius: inherit;
   justify-self: center;
   height: 400px;
   width: 100%;
+  transition: inherit;
+}
+.project-card:hover .project-img {
+  transform: rotate(10deg) scale(1.1);
 }
 .project-card h3 {
   margin: 0.5rem 0;
   text-align: center;
 }
-.tech {
+.tech,
+.project-links {
+  margin-top: 1rem;
   text-align: center;
 }
+.project-links svg {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+}
 .tech-item {
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-shadow-color);
   border-radius: 15px;
   margin: 0 0.5rem;
   padding: 0.2rem 1rem;
+}
+.row-2 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.project-links a:hover svg {
+  color: var(--color-accent);
 }

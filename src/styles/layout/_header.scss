@@ -14,7 +14,7 @@ header {
   // transition: translate $transition;
 }
 header nav {
-  background-color: $bg-secondary;
+  background-color: var(--bg-secondary-2);
   transition: translate $transition;
 }
 header nav .container {
@@ -22,8 +22,8 @@ header nav .container {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width:768px){
-  header nav .container{
+@media (max-width: 768px) {
+  header nav .container {
     padding: 1rem;
   }
 }
@@ -45,7 +45,7 @@ header nav li {
 header nav a {
   text-transform: capitalize;
   &:not(header nav > a):hover {
-    color: $color-accent;
+    color: var(--color-accent);
   }
 }
 header nav a .nav__icon {
@@ -58,6 +58,9 @@ header nav a .nav__icon {
 header nav .ham {
   display: none;
   cursor: pointer;
+}
+#grid > g {
+  stroke: var(--color-primary);
 }
 header nav .ham input {
   appearance: none;
@@ -74,7 +77,7 @@ header nav .ham input {
     width: 100%;
     position: fixed;
     z-index: 1;
-    background-color: white;
+    background-color: var(--bg-secondary);
     top: -100vh;
     left: 0;
     padding: 2rem 1.5rem 4rem;
@@ -87,6 +90,7 @@ header nav .ham input {
 
     & .nav__icon {
       display: block;
+      color: var(--color-primary);
     }
     & a {
       display: flex;

@@ -1,16 +1,31 @@
 $white-0: #ffffff;
 $white-1: #f9f9f9;
-$black-0: #000000;
-$black-1: #2d2e32;
+$white-shadow: rgba(255, 255, 255, 0.2);
+$black-shadow: rgba(0, 0, 0, 0.2);
+$black-0: #232323;
+$black-1: #2c2c2c;
+$black-2: #333333;
 $blue-1: #778afb;
-$transition:0.3s ease-in-out;
+$blue-0: #147efb;
+$transition: 0.3s ease-in-out;
 
-$bg-primary: $white-1;
-$bg-secondary: $white-0;
-// $bg-primary: $black-1;
-// $bg-secondary: $black-0;
-
-$color-primary: $black-1;
-$color-secondary: $black-0;
-$color-accent: $blue-1;
-
+:root {
+  --bg-primary: #{$white-1};
+  --bg-secondary: #{$white-0};
+  --color-primary: #{$black-1};
+  --color-secondary: #{$black-0};
+  --bg-secondary-2: var(--bg-secondary);
+  --color-accent: #{$blue-0};
+  --color-accent-secondary: #{$blue-1};
+  --border-shadow-color: #{$black-shadow};
+}
+.dark-theme {
+  --bg-primary: #{$black-1};
+  --bg-secondary: #{$black-2};
+  --bg-secondary-2: #{$black-0};
+  --color-primary: #{$white-1};
+  --color-secondary: #{$white-0};
+  --color-accent: #{$blue-0};
+  --color-accent-secondary: #{$blue-1};
+  --border-shadow-color: #{$white-shadow};
+}
