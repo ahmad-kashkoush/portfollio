@@ -3,7 +3,7 @@ export const myProjects = [
     id: 1,
     title: "Chess Game",
     tech: ["Javascript"],
-    filter: ["most-important"],
+    filter: ["most-important", "javascript"],
     githubLink: "https://github.com/ahmad-kashkoush/Chess-Game",
     demoLink: "https://chess-game-93c2.vercel.app/",
     img: "projects-images/chess-game.png",
@@ -12,7 +12,7 @@ export const myProjects = [
     id: 2,
     title: "Gallery Template",
     tech: ["HTML", "CSS"],
-    filter: ["most-important"],
+    filter: ["most-important", "static"],
     githubLink: "https://github.com/ahmad-kashkoush/Kashkoush-Template",
     demoLink: "https://ahmad-kashkoush.github.io/Kashkoush-Template/ak.html",
     img: "projects-images/template-3.png",
@@ -20,8 +20,8 @@ export const myProjects = [
   {
     id: 3,
     title: "Worldwise",
-    filter: ["most-important"],
-    tech: ["React"],
+    filter: ["most-important", "react"],
+    tech: ["React", "SASS"],
     githubLink: "https://github.com/ahmad-kashkoush/worldwise",
     demoLink: "https://worldwise-liart-one.vercel.app/",
     img: "projects-images/worldwise.png",
@@ -29,7 +29,7 @@ export const myProjects = [
   {
     id: 4,
     title: "fokify",
-    filter: ["most-important"],
+    filter: ["most-important", "javascript"],
     tech: ["javascript"],
     githubLink: "https://github.com/ahmad-kashkoush/Forkify-v2",
     demoLink: "https://forkify-v2-peach.vercel.app/",
@@ -38,8 +38,8 @@ export const myProjects = [
   {
     id: 5,
     title: "Bankist",
-    filter: ["most-important"],
-    tech: ["javascript"],
+    filter: ["most-important", "static"],
+    tech: ["Javascript", "HTML", "CSS"],
     githubLink: "https://github.com/ahmad-kashkoush/Bankist-Website",
     demoLink: "https://bankist-website-six.vercel.app/",
     img: "projects-images/bankist.png",
@@ -48,7 +48,7 @@ export const myProjects = [
   {
     id: 6,
     title: "Dashboard",
-    filter: ["most-important"],
+    filter: ["most-important", "static"],
     tech: ["HTML", "CSS"],
     githubLink: "https://github.com/ahmad-kashkoush/Dashboard",
     demoLink: "https://ahmad-kashkoush.github.io/Dashboard/",
@@ -58,8 +58,8 @@ export const myProjects = [
   {
     id: 7,
     title: "Bloger",
-    filter: ["most-important"],
-    tech: ["HTML", "CSS"],
+    filter: ["most-important", "static"],
+    tech: ["HTML", "SASS"],
     githubLink: "https://github.com/ahmad-kashkoush/blogr-landing-page",
     demoLink: "https://blogr-landing-page-beta-pearl.vercel.app/",
     img: "projects-images/bloger-landing-page.png",
@@ -68,7 +68,7 @@ export const myProjects = [
   {
     id: 8,
     title: "React Quiz",
-    filter: ["most-important"],
+    filter: ["most-important", "react"],
     tech: ["React"],
     githubLink: "https://github.com/ahmad-kashkoush/react-quiz",
     demoLink: "https://blogr-landing-page-beta-pearl.vercel.app/",
@@ -77,13 +77,13 @@ export const myProjects = [
   {
     id: 9,
     title: "Kasper template",
-    filter: ["most-important"],
-    tech: ["javascript"],
+    filter: ["most-important", "static"],
+    tech: ["HTML", "CSS"],
     githubLink: "https://github.com/ahmad-kashkoush/Kasper",
     demoLink: "https://ahmad-kashkoush.github.io/Kasper/",
     img: "projects-images/kasper-template.png",
   },
-   
+
 
 
 ];

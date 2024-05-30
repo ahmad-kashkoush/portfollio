@@ -22,14 +22,15 @@ export default function Projects() {
   const [projects, setProjects] = useState([]);
   const { visible, containerRef, visibleRef } = useAnimateSides();
   function handleClickSelectedTap(value) {
-    setSelectedTap(value === selectedTap ? null : value);
+    if (value.toLowerCase() === selectedTap.toLowerCase) return;
+    setSelectedTap(value);
   }
   useEffect(() => {
     if (selectedTap === null || selectedTap === "all") setProjects(myProjects);
     else
       setProjects(
         myProjects.filter((proj) =>
-          proj.tech.includes(selectedTap.toLowerCase())
+          proj.filter.includes(selectedTap.toLowerCase())
         )
       );
   }, [selectedTap]);
@@ -37,8 +38,9 @@ export default function Projects() {
     <section ref={containerRef} className="projects " id="projects">
       <div className="container projects-container">
         <h2
-          
-          className={`left-translate ${visible||visibleRef.current ? "get-from-side" : ""}`}
+          className={`left-translate ${
+            visible || visibleRef.current ? "get-from-side" : ""
+          }`}
         >
           projects{" "}
         </h2>

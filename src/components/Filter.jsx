@@ -1,4 +1,4 @@
-const categories = ["all", "react", "javascript", "sass", "html", "css", "cpp"];
+const categories = ["all", "react", "javascript", "static"];
 
 export function Filter({ tab, onClickTab }) {
   return (
@@ -27,7 +27,7 @@ function FilterTap({ category, isSelected, onClickTab }) {
         value={category}
         onClick={handleClick}
         >
-      {category}
+      {category.toUpperCase()}
     </button>
   );
 }
