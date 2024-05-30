@@ -1,38 +1,49 @@
 @use "src/styles/base" as *;
 .tech-stack {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: 10px;
-    bottom: -6rem;
-    gap: 1rem;
-    font-size: 2rem;
-  }
-  
-  .tech-stack ul {
-    display: flex;
-    align-items: center;
-    margin-top: 1rem;
-    gap: 1rem;
-  }
-  .tech-stack ul li{
-    transition: translate $transition;
-  }
-  .tech-stack ul li:hover{
-    translate: 0 -1rem;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: -6rem;
+  gap: 1rem;
+  font-size: 2rem;
+}
 
+.tech-stack ul {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.tech-stack ul li {
+  transition: translate $transition;
+}
+.tech-stack ul li:hover {
+  translate: 0 -1rem;
+}
+
+.stack-left {
+  transition: left 1s ease-in-out;
+  left: -50rem;
+}
+.stack-get-from-side {
+  left: 10px;
+}
+
+@media (max-width: 992px) {
+  .tech-stack {
+    flex-direction: column;
+   
+    bottom: -4rem;
+    translate: -50% 50%;
   }
-  @media (max-width: 992px) {
-    .tech-stack {
-      flex-direction: column;
-      left: 50%;
-      bottom: -4rem;
-      translate: -50% 50%;
-    }
-    .breaker{
-      display: none;
-    }
-    .tech-stack ul{
-      margin-top: 0;
-    }
+  .stack-get-from-side {
+    left: 50% !important;
   }
+
+  .breaker {
+    display: none;
+  }
+  .tech-stack ul {
+    margin-top: 0;
+  }
+}

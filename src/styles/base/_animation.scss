@@ -1,0 +1,14 @@
+@use "/src/styles/base/colors" as *;
+.left-translate {
+  transform: translateX(-300%);
+}
+.right-translate {
+  transform: translateX(300%);
+}
+.left-translate,
+.right-translate {
+  transition: transform 1s ease-in-out;
+}
+.get-from-side {
+  transform: translateX(0) !important;
+}

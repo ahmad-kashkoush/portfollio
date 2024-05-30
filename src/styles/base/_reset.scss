@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 //  default styles
+body {
+    overflow-x: hidden;
+}
 li {
     list-style: none;
 }

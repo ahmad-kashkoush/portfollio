@@ -8,6 +8,31 @@ export function useAnimateNav() {
   return { isVisible, isTranslate, containerRef };
 }
 
+export function useAnimateSides(rootMargin = "-300px") {
+  const [visible, setVisible] = useState(false);
+  const visibleRef = useRef(false);
+  const containerRef = useRef(null);
+  const observerCallback = (entries) => {
+    const [entry] = entries;
+    setVisible(entry.isIntersecting);
+  };
+  const options = {
+    root: null,
+    rootMargin: rootMargin,
+    threshold: 0,
+  };
+  useEffect(() => {
+    const observer = new IntersectionObserver(observerCallback, options);
+    if (containerRef.current) observer.observe(containerRef.current);
+    return () => observer.unobserve(containerRef.current);
+  }, [options]);
+
+  useEffect(() => {
+    visibleRef.current = visibleRef.current || visible;
+  }, [visible, visibleRef]);
+  return { visible, containerRef, visibleRef };
+}
+
 function useMakeNavVisible(containerRef, setIsVisible) {
   const observerCallback = (entries) => {
     const [entry] = entries;
@@ -17,7 +42,7 @@ function useMakeNavVisible(containerRef, setIsVisible) {
 
   const options = {
     root: null,
-    rootMargin: "90%",
+    rootMargin: "10%",
     threshold: 0,
   };
   useEffect(() => {
@@ -32,11 +57,10 @@ function useAddTranslate(containerRef, setIsTranslate) {
   const observerCallback = (entries) => {
     const [entry] = entries;
     setIsTranslate(entry.isIntersecting);
-    console.log(entry.isIntersecting);
   };
   const options = {
     root: null,
-    rootMargin: "50%",
+    rootMargin: "8%",
     threshold: 1,
   };
   useEffect(() => {

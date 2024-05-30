@@ -1,6 +1,13 @@
-export function TechStack() {
+/* eslint-disable react/prop-types */
+import { useAnimateSides } from "../hooks/useAnimateNav";
+
+export function TechStack({ visible = true }) {
   return (
-    <div className="tech-stack">
+    <div
+      className={`tech-stack 
+    stack-left
+    ${visible? "stack-get-from-side" : ""}`}
+    >
       <span>Tech Stack</span>
       <span className="breaker">|</span>
       <ul>
@@ -13,12 +20,14 @@ export function TechStack() {
         <li>
           <img
             src="https://skillicons.dev/icons?i=react,next"
-            alt="skill-icon" />
+            alt="skill-icon"
+          />
         </li>
         <li>
           <img
             src="https://skillicons.dev/icons?i=tailwind,scss"
-            alt="skill-icon" />
+            alt="skill-icon"
+          />
         </li>
       </ul>
     </div>

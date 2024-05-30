@@ -1,11 +1,14 @@
+import { useAnimateSides } from "../hooks/useAnimateNav";
+
 export default function AboutMe() {
+  const {visible, containerRef, visibleRef}=useAnimateSides();
   return (
-    <section className="about " id="about">
+    <section ref={containerRef} className="about " id="about">
       <div className="container">
-        <h2>About me</h2>
+        <h2 className={`left-translate ${visible||visibleRef.current?"get-from-side":""}`}>About me</h2>
         <div className="hero-wrapper">
-          <div className="about-image"></div>
-          <div className="about-content">
+          <div className={`about-image left-translate ${visible||visibleRef.current?"get-from-side":""}`}></div>
+          <div className={`about-content right-translate ${visible||visibleRef.current?"get-from-side":""}`}>
             <p>
               I am a frontend developer with a particular interest in making
               things simple and automating daily tasks. I try to keep up with

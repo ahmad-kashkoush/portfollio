@@ -5,6 +5,7 @@ import { Filter } from "./Filter";
 import { useEffect } from "react";
 import { ProjectsGallery } from "./ProjectsGallery";
 import { myProjects } from "/public/myProjects";
+import { useAnimateSides } from "../hooks/useAnimateNav";
 /* eslint-disable react/prop-types */
 
 export default function Projects() {
@@ -19,6 +20,7 @@ export default function Projects() {
 
   const [selectedTap, setSelectedTap] = useState(null);
   const [projects, setProjects] = useState([]);
+  const { visible, containerRef, visibleRef } = useAnimateSides();
   function handleClickSelectedTap(value) {
     setSelectedTap(value === selectedTap ? null : value);
   }
@@ -32,9 +34,14 @@ export default function Projects() {
       );
   }, [selectedTap]);
   return (
-    <section className="projects " id="projects">
+    <section ref={containerRef} className="projects " id="projects">
       <div className="container projects-container">
-        <h2>projects </h2>
+        <h2
+          
+          className={`left-translate ${visible||visibleRef.current ? "get-from-side" : ""}`}
+        >
+          projects{" "}
+        </h2>
         <Filter tab={selectedTap} onClickTab={handleClickSelectedTap} />
         <ProjectsGallery projects={projects} />
       </div>
