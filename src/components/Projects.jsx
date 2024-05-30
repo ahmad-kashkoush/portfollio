@@ -22,8 +22,7 @@ export default function Projects() {
   const [projects, setProjects] = useState([]);
   const { visible, containerRef, visibleRef } = useAnimateSides();
   function handleClickSelectedTap(value) {
-    if (value.toLowerCase() === selectedTap.toLowerCase) return;
-    setSelectedTap(value);
+       setSelectedTap(value);
   }
   useEffect(() => {
     if (selectedTap === null || selectedTap === "all") setProjects(myProjects);

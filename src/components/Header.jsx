@@ -13,7 +13,7 @@ export default function Header() {
        `}
         >
           <div className="container">
-            <a href="#home">Kashkoush.dev</a>
+            <a href="#home" className="logo">Kashkoush</a>
             <label htmlFor="ham" className="ham">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

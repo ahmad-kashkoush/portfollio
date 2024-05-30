@@ -1,5 +1,5 @@
 @use "src/styles/base" as *;
-
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
 .sticky-2 {
   position: fixed;
   z-index: 1;
@@ -8,6 +8,14 @@
 }
 .add-translate {
   translate: 0 -200px;
+}
+.logo{
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  // color: var(--color-accent);
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 1.6rem;
 }
 
 header {

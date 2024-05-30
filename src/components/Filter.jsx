@@ -27,7 +27,7 @@ function FilterTap({ category, isSelected, onClickTab }) {
         value={category}
         onClick={handleClick}
         >
-      {category.toUpperCase()}
+      {category}
     </button>
   );
 }
