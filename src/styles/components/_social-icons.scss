@@ -6,11 +6,19 @@
   font-size: 30px;
   margin-top: 1rem;
   & a {
-    transition: color $transition;
+    transition: color $transition,
+    transform $transition;
     &:hover {
       color: var(--color-accent);
     }
+    // transition: transform $transition;
   }
+}
+.social a img{
+    width: 60px;
+}
+.social a:hover {
+  transform: rotate(10deg) translateX(-5px);
 }
 @media (max-width: 992px) {
   .social {
