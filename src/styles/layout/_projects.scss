@@ -38,7 +38,7 @@
   transition: inherit;
 }
 .project-card:hover .project-img {
-  transform: rotate(10deg) scale(1.1);
+  transform: scale(1.1) rotate(5deg) ;
 }
 .project-card h3 {
   margin: 0.5rem 0;
