@@ -5,15 +5,16 @@
     box-sizing: border-box;
 }
 //  default styles
-body {
-    overflow-x: hidden;
-}
+
 li {
     list-style: none;
 }
 a{
     text-decoration: none;
     color: var(--color-primary);
+}
+section {
+    overflow-x:hidden;  
 }
 
 
