@@ -71,7 +71,7 @@ export const myProjects = [
     filter: ["most-important", "react"],
     tech: ["React"],
     githubLink: "https://github.com/ahmad-kashkoush/react-quiz",
-    demoLink: "https://blogr-landing-page-beta-pearl.vercel.app/",
+    demoLink: "https://react-quiz-woad-seven.vercel.app/",
     img: "projects-images/react-quiz.png",
   },
   {
