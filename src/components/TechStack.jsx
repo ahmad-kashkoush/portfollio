@@ -29,6 +29,14 @@ const techStackIcons = [
     alt: "Bootstrap",
     img: "https://skillicons.dev/icons?i=bootstrap",
   },
+  {
+    alt: "SASS",
+    img: "https://skillicons.dev/icons?i=sass",
+  },
+  {
+    alt: "Figma",
+    img: "https://skillicons.dev/icons?i=figma",
+  },
 ];
 export function TechStack({ visible = true }) {
   return (
