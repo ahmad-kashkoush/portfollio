@@ -1,6 +1,6 @@
 import { Social } from "./Social";
 import { TechStack } from "./TechStack";
-import resume from "../assets/AhmedKashkoush_Resume.pdf";
+
 import { useAnimateSides } from "../hooks/useAnimateNav";
 export default function Hero() {
   const { containerRef, visible, visibleRef } = useAnimateSides("200px");
