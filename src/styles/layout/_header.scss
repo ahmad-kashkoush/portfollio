@@ -1,5 +1,5 @@
 @use "src/styles/base" as *;
-@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
 .sticky-2 {
   position: fixed;
   z-index: 1;
@@ -9,7 +9,7 @@
 .add-translate {
   translate: 0 -200px;
 }
-.logo{
+.logo {
   font-family: "Poetsen One", sans-serif;
   font-weight: 400;
   // color: var(--color-accent);
@@ -18,9 +18,6 @@
   font-size: 1.6rem;
 }
 
-header {
-  // transition: translate $transition;
-}
 header nav {
   background-color: var(--bg-secondary-2);
   transition: translate $transition;
@@ -29,13 +26,13 @@ header nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   header nav .container {
     padding: 1rem 2rem;
   }
 }
-
 header nav ul {
   display: flex;
   gap: 2rem;
@@ -54,59 +51,5 @@ header nav a {
   text-transform: capitalize;
   &:not(header nav > a):hover {
     color: var(--color-accent);
-  }
-}
-header nav a .nav__icon {
-  display: none;
-  width: 30px;
-  height: 30px;
-  font-size: 30px;
-}
-/* ham */
-header nav .ham {
-  display: none;
-  cursor: pointer;
-}
-#grid > g {
-  stroke: var(--color-primary);
-}
-header nav .ham input {
-  appearance: none;
-  outline: none;
-  pointer-events: none;
-}
-
-@media (max-width: 768px) {
-  header nav .ham {
-    display: block;
-    position: relative;
-  }
-  header nav ul {
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    background-color: var(--bg-secondary);
-    top: -100vh;
-    left: 0;
-    padding: 2rem 1.5rem 4rem;
-    transition: 0.3s ease-in-out;
-    border-radius: 0 0 1.5rem 1.5rem;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-
-    & .nav__icon {
-      display: block;
-      color: var(--color-primary);
-    }
-    & a {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  header nav .ham:has(input:checked) + ul {
-    top: 58px;
   }
 }

@@ -1,0 +1,97 @@
+.hamburgerMenu {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .hamburgerMenu + ul {
+    translate: 100%;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+
+    padding: 1rem 0;
+    transition: translate 0.3s ease-in;
+    background-color: var(--bg-secondary);
+    opacity: 0.9;
+  }
+  .hamburgerMenu:has(input:checked) + ul {
+    translate: -6%;
+  }
+  nav .container .links a,
+  nav .container .links button {
+    z-index: 101;
+    font-size: 2rem;
+  }
+}
+.hamburgerMenu {
+  /* variables */
+  --bar-width: 40px;
+  --bar-height: 5px;
+  --hamburger-gap: 8px;
+  --foreground-color: var(--color-primary);
+  --background-color: transparent;
+  --animation-timing: 0.3s;
+  --transform-origin: right center;
+  --hamburger-height: calc(var(--hamburger-gap) * 2 + var(--bar-height) * 3);
+  --hamburger-width: var(--bar-width);
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);
+}
+.hamburgerMenu {
+  display: flex;
+  flex-direction: column;
+  gap: var(--hamburger-gap);
+  width: max-content;
+  z-index: 2;
+  cursor: pointer;
+  background-color: var(--background-color);
+}
+
+.hamburgerMenu input,
+.hamburgerMenu::before,
+.hamburgerMenu::after {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: var(--foreground-color);
+  border-radius: 9999px;
+
+  transition: opacity var(--animation-timing), width var(--animation-timing),
+    rotate var(--animation-timing), translate var(--animation-timing);
+  transform-origin: var(--transform-origin);
+}
+.hamburgerMenu input {
+  appearance: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+}
+.hamburgerMenu input:checked {
+  opacity: 0;
+  width: 0;
+}
+.hamburgerMenu:has(input:checked)::before {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / -2);
+}
+.hamburgerMenu:has(input:checked)::after {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / 2);
+}
+@media (min-width: 768px) {
+  .hamburgerMenu {
+    display: none;
+  }
+}
+
+body:has(input#ham-checkbox:checked) {
+  overflow: hidden;
+}
