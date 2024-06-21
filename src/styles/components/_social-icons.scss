@@ -4,6 +4,7 @@
   justify-content: start;
   gap: 1rem;
   font-size: 30px;
+  overflow: hidden;
   margin-top: 1rem;
   & a {
     transition: color $transition,
