@@ -18,6 +18,7 @@ $transition: 0.3s ease-in-out;
   --color-accent: #{$blue-0};
   --color-accent-secondary: #{$blue-1};
   --border-shadow-color: #{$black-shadow};
+  --bg-project-card: $white-1;
 }
 .dark-theme {
   --bg-primary: #{$black-1};
@@ -28,4 +29,5 @@ $transition: 0.3s ease-in-out;
   --color-accent: #{$blue-0};
   --color-accent-secondary: #{$blue-1};
   --border-shadow-color: #{$white-shadow};
+  --bg-project-card: #444;
 }

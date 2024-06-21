@@ -18,15 +18,18 @@
   overflow: hidden;
 }
 
-.project-card,
-.project-card > * {
-  background-color: #444;
+ .project-card,
+ .project-card > * {
+  background-color: var(--bg-project-card);
   color: var(--color-primary);
+}
+.light .project-card,
+.light .project-card > * {
+  background-color: blue;
 }
 .project-img-wrapper {
   overflow: hidden;
   transition: inherit;
-  
 }
 .project-img {
   background-color: transparent;
@@ -36,72 +39,72 @@
   border-radius: inherit;
   justify-self: center;
   height: 400px;
-  
+
   width: 100%;
   transition: inherit;
 }
-@media (max-width:992px){
-  .projects-gallery{
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) );
+@media (max-width: 992px) {
+  .projects-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     justify-content: center;
   }
   .project-img {
     height: 350px;
   }
-  .project-card{
+  .project-card {
     padding: 20px;
   }
 }
-@media (max-width:770px){
-  .projects-gallery{
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) );
+@media (max-width: 770px) {
+  .projects-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     justify-content: center;
   }
   .project-img {
     height: 300px;
   }
-  .project-card{
+  .project-card {
     padding: 20px;
   }
 }
-@media (max-width:750px){
-  .projects-gallery{
+@media (max-width: 750px) {
+  .projects-gallery {
     grid-template-columns: auto;
     justify-content: center;
   }
   .project-img {
     height: 400px;
   }
-  .project-card{
+  .project-card {
     padding: 40px;
   }
 }
-@media (max-width:500px){
-  .projects-gallery{
+@media (max-width: 500px) {
+  .projects-gallery {
     grid-template-columns: auto;
     justify-content: center;
   }
   .project-img {
     height: 300px;
   }
-  .project-card{
+  .project-card {
     padding: 30px;
   }
 }
-@media (max-width:500px){
-  .projects-gallery{
+@media (max-width: 500px) {
+  .projects-gallery {
     grid-template-columns: auto;
     justify-content: center;
   }
   .project-img {
     height: 300px;
   }
-  .project-card{
+  .project-card {
     padding: 15px;
   }
 }
 .project-card:hover .project-img {
-  transform: scale(1.1) rotate(5deg) ;
+  transform: scale(1.1) rotate(5deg);
 }
 .project-card h3 {
   margin: 0.5rem 0;
