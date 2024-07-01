@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 export function useAnimateNav() {
   const containerRef = useRef(null);
   const [isVisible, setIsVisible] = useState(true);
@@ -10,6 +11,7 @@ export function useAnimateNav() {
 
 export function useAnimateSides(rootMargin = "-300px") {
   const [visible, setVisible] = useState(false);
+
   const visibleRef = useRef(false);
   const containerRef = useRef(null);
   const observerCallback = (entries) => {
