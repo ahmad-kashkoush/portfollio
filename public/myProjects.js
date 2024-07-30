@@ -10,6 +10,15 @@ export const myProjects = [
   },
   {
     id: 2,
+    title: "Car Rental",
+    tech: ["React", "Tailwindcss"],
+    filter: ["most-important", "react"],
+    githubLink: "https://github.com/ahmad-kashkoush/Car-Rental",
+    demoLink: "https://car-rental-blue-one.vercel.app/",
+    img: "projects-images/car-rental.png",
+  },
+  {
+    id: 3,
     title: "Gallery Template",
     tech: ["HTML", "CSS"],
     filter: ["most-important", "static"],
@@ -18,7 +27,18 @@ export const myProjects = [
     img: "projects-images/template-3.png",
   },
   {
-    id: 3,
+    id: 4,
+    title: "Twitter Clone",
+    tech: ["React", "Tailwindcss", "Appwrite"],
+    filter: ["most-important", "react"],
+    githubLink: "https://github.com/ahmad-kashkoush/social-media-clone",
+    demoLink: "https://social-media-clone-pi.vercel.app/",
+    img: "projects-images/social-media-clone.png",
+  },
+
+
+  {
+    id: 5,
     title: "Worldwise",
     filter: ["most-important", "react"],
     tech: ["React", "SASS"],
@@ -27,7 +47,7 @@ export const myProjects = [
     img: "projects-images/worldwise.png",
   },
   {
-    id: 4,
+    id: 6,
     title: "fokify",
     filter: ["most-important", "javascript"],
     tech: ["javascript"],
@@ -36,7 +56,7 @@ export const myProjects = [
     img: "projects-images/forkify.png",
   },
   {
-    id: 5,
+    id: 7,
     title: "Bankist",
     filter: ["most-important", "static"],
     tech: ["Javascript", "HTML", "CSS"],
@@ -46,7 +66,7 @@ export const myProjects = [
   },
 
   {
-    id: 6,
+    id: 8,
     title: "Dashboard",
     filter: ["most-important", "static"],
     tech: ["HTML", "CSS"],
@@ -56,7 +76,7 @@ export const myProjects = [
   },
 
   {
-    id: 7,
+    id: 9,
     title: "Bloger",
     filter: ["most-important", "static"],
     tech: ["HTML", "SASS"],
@@ -66,7 +86,7 @@ export const myProjects = [
   },
 
   {
-    id: 8,
+    id: 10,
     title: "React Quiz",
     filter: ["most-important", "react"],
     tech: ["React"],
@@ -75,7 +95,7 @@ export const myProjects = [
     img: "projects-images/react-quiz.png",
   },
   {
-    id: 9,
+    id: 11,
     title: "Kasper template",
     filter: ["most-important", "static"],
     tech: ["HTML", "CSS"],
@@ -87,25 +107,3 @@ export const myProjects = [
 
 
 ];
-
-/*
-
-
-
-
-
- 
-
-
- 
-
-
-
-
-
-
-
-
-
-
-*/
