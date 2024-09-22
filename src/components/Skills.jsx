@@ -43,24 +43,29 @@ function SkillSection({ skillBlock }) {
 function SkillItem({ skill }) {
   return (
     <div className="m-8">
-      <li className="m-2">
-        <span className="font-bold text-[1.7rem] tracking-wide ">
-          {skill?.name[0]}
-        </span>
-        <span
-          style={{
-            letterSpacing: "1px",
-          }}
-        >
-          {skill?.name.slice(1)}
-        </span>
-        {skill.icon && (
-          <span>
-            <img src={`https://skillicons.dev/icons?i=${skill.icon}`} />
+      <li className="m-2 flex items-center flex-wrap">
+        <p>
+          <span className="font-bold text-[1.7rem] tracking-wide ">
+            {skill?.name[0]}
           </span>
-        )}
+          <span
+            className="mr-2"
+            style={{
+              letterSpacing: "1px",
+            }}
+          >
+            {skill?.name.slice(1)}:
+          </span>
+          </p>
+          {skill.icon && (
+            <span>
+              <img src={`https://skillicons.dev/icons?i=${skill.icon}`} />
+            </span>
+          )}
         {skill.image && (
-          <span><img width={48} height={48} src={skill.image}/></span>
+          <span>
+            <img width={50} height={50} src={skill.image} />
+          </span>
         )}
       </li>
       <ProgressBar
