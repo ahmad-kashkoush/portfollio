@@ -10,7 +10,7 @@ section > .container {
     text-align: start;
   }
 }
-.about{
+.about {
   background-color: var(--bg-secondary);
   color: var(--color-primary);
 }
@@ -18,11 +18,13 @@ section > .container {
 .projects h2,
 .contact h2,
 .skills h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 2rem;
   text-align: center;
   text-transform: capitalize;
-  color: $blue-0;
+  color: var(--color-primary);
+  /* font-weight: bold;*/
+  // color: $blue-0;
 }
 
 .about .hero-wrapper {

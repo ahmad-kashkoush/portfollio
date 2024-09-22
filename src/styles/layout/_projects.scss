@@ -8,6 +8,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 1rem;
+ 
 }
 
 .project-card {
@@ -18,8 +19,8 @@
   overflow: hidden;
 }
 
- .project-card,
- .project-card > * {
+.project-card,
+.project-card > * {
   background-color: var(--bg-project-card);
   color: var(--color-primary);
 }
