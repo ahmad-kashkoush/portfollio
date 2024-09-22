@@ -1,200 +1,152 @@
+import { icon } from "@fortawesome/fontawesome-svg-core";
+
 export const skills = [
     {
         skillsDescription: "PROGRAMMING",
         skillsSection: [
             {
-                skillname: "C",
+                name: "C",
                 rate: "100",
+                icon: "c"
             },
             {
-                skillname: "C++",
+                name: "C++",
                 rate: "100",
+                icon: "cpp"
             },
             {
-                skillname: "Python",
+                name: "Python",
                 rate: "80",
+                icon: "py"
             },
             {
-                skillname: "GO",
+                name: "JavaScript",
+                rate: "100",
+                icon: "js"
+            },
+            {
+                name: "TypeScript",
+                rate: "100",
+                icon: "ts"
+            },
+            {
+                name: "Node Js",
+                rate: "100",
+                icon: "nodejs"
+            },
+            {
+                name: "SQL",
                 rate: "75",
+                icon: "postgres,mysql,sqlite"
             },
             {
-                skillname: "JavaScript",
-                rate: "75",
+                name: "HTML",
+                rate: "100",
+                icon: "html"
             },
             {
-                skillname: "SQL",
-                rate: "75",
+                name: "CSS and styling",
+                rate: "90",
+                icon: "css,sass,tailwindcss,styledcomponents,bootstrap"
             },
             {
-                skillname: "HTML",
-                rate: "70",
-            },
-            {
-                skillname: "CSS",
-                rate: "70",
-            },
-            {
-                skillname: "Java",
+                name: "Java",
                 rate: "50",
+                icon: "java"
             },
         ]
     },
     {
-        skillsDescription: "TOOLS and Concepts",
+        skillsDescription: "FRAMEWORKS and libraries",
         skillsSection: [
             {
-                skillname: "GitHub",
+                name: "React JS",
                 rate: "100",
+                icon: "react"
             },
             {
-                skillname: "GitLab",
+                name: "NextJs",
                 rate: "100",
+                icon: "nextjs"
             },
-            {
-                skillname: "Google Cloud",
-                rate: "80",
-            },
-            {
-                skillname: "Problem Solving",
-                rate: "100",
-            },
-            {
-                skillname: "Competitive Programming",
-                rate: "100",
-            },
-            {
-                skillname: "Data Structures",
-                rate: "100",
-            },
-            {
-                skillname: "Algorithms",
-                rate: "100",
-            },
-            {
-                skillname: "Object Oriented Programming",
-                rate: "90",
-            },
-            {
-                skillname: "Design Patterns",
-                rate: "70",
-            },
-            {
-                skillname: "System Design",
-                rate: "80",
-            },
-            {
-                skillname: "Trello",
-                rate: "70"
-            },
-            {
-                skillname: "Swagger",
-                rate: "95"
-            },
-            {
-                skillname: "Figma",
-                rate: "80"
-            },
-            {
-                skillname: "Postman",
-                rate: "90"
-            },
-            {
-                skillname: "Docker",
-                rate: "70",
-            },
-            {
-                skillname: "Kubernetes",
-                rate: "60",
-            }
+
+
+
         ]
     },
     {
-        skillsDescription: "Miscellaneous",
+        skillsDescription: "Concepts",
         skillsSection: [
             {
-                skillname: "Git",
+                name: "Data Structures",
                 rate: "100",
+                image: "icons/datastructures.png"
             },
             {
-                skillname: "Bash",
-                rate: "70",
+                name: "Algorithms",
+                rate: "100",
+                image: "icons/algorithms.png"
+
             },
             {
-                skillname: "Shell",
-                rate: "70",
-            },
-            {
-                skillname: "LaTeX",
+                name: "Object Oriented Programming",
                 rate: "90",
+                image: "icons/oop.png"
             },
             {
-                skillname: "Markdown",
+                name: "Problem Solving",
                 rate: "100",
+                image: "icons/problem-solving.png"
             },
             {
-                skillname: "Microsoft Office",
-                rate: "100",
-            },
-            {
-                skillname: "Web Scraping",
-                rate: "90",
-            },
-            {
-                skillname: "Google Documents (Docs, Sheets, Slides, Forms, etc.)",
-                rate: "100",
-            },
-            {
-                skillname: "Google API",
-                rate: "90",
-            },
-            {
-                skillname: "Web Extensions",
+                name: "Design Patterns",
                 rate: "50",
-            }
-        ]
-    },
-    {
-        skillsDescription: "FRAMEWORKS",
-        skillsSection: [
-            {
-                skillname: "Django",
-                rate: "75",
+                image: "icons/design-patterns.png"
             },
             {
-                skillname: "React JS",
-                rate: "80",
-            },
-            {
-                skillname: "React Native",
-                rate: "80",
-            },
-            {
-                skillname: "FastAPI",
-                rate: "80",
-            },
-            {
-                skillname: "Bootstrap",
-                rate: "60",
+                name: "System Design",
+                rate: "50",
+                image: "icons/system-design.png"
             },
 
         ]
     },
     {
-        skillsDescription: "OPERATING SYSTEMS",
+        skillsDescription: "tools and Miscellaneous",
         skillsSection: [
             {
-                skillname: "Windows",
+                name: "Git",
                 rate: "100",
+                icon: "git"
             },
             {
-                skillname: "Linux",
-                rate: "100",
+                name: "Bash",
+                rate: "70",
+                icon: "bash"
+            },
+
+            {
+                name: "Figma",
+                rate: "80",
+                icon: "figma"
             },
             {
-                skillname: "Mac OS",
+                name: "Docker",
+                rate: "50",
+                icon: "docker"
+            },
+            {
+                name: "Obsidian",
                 rate: "100",
-            }
+                icon: "obsidian"
+
+            },
+            {
+                name: "Notion",
+                rate: "80",
+                icon: "notion"
+            },
         ]
     },
+
 ]
