@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Filter } from "./Filter";
 import { useEffect } from "react";
 import { ProjectsGallery } from "./ProjectsGallery";
-import { myProjects } from "/public/myProjects";
+import { myProjects } from "./../data/myProjects";
 import { useAnimateSides } from "../hooks/useAnimateNav";
 /* eslint-disable react/prop-types */
 
@@ -22,7 +22,7 @@ export default function Projects() {
   const [projects, setProjects] = useState([]);
   const { visible, containerRef, visibleRef } = useAnimateSides();
   function handleClickSelectedTap(value) {
-       setSelectedTap(value);
+    setSelectedTap(value);
   }
   useEffect(() => {
     if (selectedTap === null || selectedTap === "all") setProjects(myProjects);
