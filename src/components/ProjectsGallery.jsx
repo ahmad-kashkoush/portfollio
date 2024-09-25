@@ -19,8 +19,8 @@ function Project({ project: { title, tech, img, githubLink, demoLink } }) {
         ></div>
       </div>
       <div className="row-2">
-        <h3>{title}</h3>
-        <div className="project-links">
+        <h3 className="text-2xl">{title}</h3>
+        <div className="project-links flex">
           <a href={githubLink} target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +57,7 @@ function Project({ project: { title, tech, img, githubLink, demoLink } }) {
           </a>
         </div>
       </div>
-      <div className="tech">
+      <div className="tech flex items-center justify-center flex-wrap gap-2">
         {tech.map((i) => (
           <span key={i} className="tech-item">
             {i}

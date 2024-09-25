@@ -1,5 +1,14 @@
 export const myProjects = [
   {
+    id: 12,
+    title: "Hotel dashboard",
+    tech: ["React", "React queries", "React hook forms", "Supabase", "Postgres", "Recharts", , "Styled components", "Tailwindcss"],
+    filter: ["react",],
+    githubLink: "https://github.com/ahmad-kashkoush/Hotel-management-system",
+    demoLink: "https://hotel-management-system-mu.vercel.app/",
+    img: "projects-images/wild-oasis.png",
+  },
+  {
     id: 1,
     title: "Chess Game",
     tech: ["Javascript"],
