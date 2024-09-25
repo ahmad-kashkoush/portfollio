@@ -28,7 +28,19 @@
   height: 60px;
   z-index: 999;
   transition: all 0.3s ease;
-  &:hover{
+  &:hover {
     background-color: var(--color-accent-secondary);
+  }
+}
+@media (max-width: 768px) {
+  .theme-switcher {
+    bottom: 0 !important;
+    left: 70% !important;
+    top: 20px;
+  }
+}
+@media (max-width: 444px) {
+  .theme-switcher {
+    left: 65% !important;
   }
 }
