@@ -1,16 +1,15 @@
-import { icon } from "@fortawesome/fontawesome-svg-core";
 
 export const skills = [
     {
         skillsDescription: "PROGRAMMING",
         skillsSection: [
             {
-                name: "C",
+                name: "",
                 rate: "100",
                 icon: "c"
             },
             {
-                name: "C++",
+                name: "",
                 rate: "100",
                 icon: "cpp"
             },
