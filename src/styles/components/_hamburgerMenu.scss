@@ -13,7 +13,7 @@
     z-index: 1;
     top: 0;
     min-height: 100vh;
-    min-width: 100vw;
+    min-width: 110vw;
 
     padding: 1rem 0;
     transition: translate 0.3s ease-in;
@@ -21,7 +21,7 @@
     opacity: 0.9;
   }
   .hamburgerMenu:has(input:checked) + ul {
-    translate: -6%;
+    translate: -11%;
   }
   nav .container .links a,
   nav .container .links button {
