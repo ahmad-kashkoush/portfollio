@@ -32,15 +32,27 @@
     background-color: var(--color-accent-secondary);
   }
 }
-@media (max-width: 768px) {
-  .theme-switcher {
-    bottom: 0 !important;
-    left: 70% !important;
-    top: 20px;
-  }
+// @media (max-width: 768px) {
+//   .theme-switcher {
+//     bottom: 0 !important;
+//     left: 70% !important;
+//     top: 20px;
+//   }
+// }
+// @media (max-width: 444px) {
+//   .theme-switcher {
+//     left: 65% !important;
+//   }
+// }
+
+body:has(.hamburgerMenu input:checked) .theme-switcher {
+  position: fixed;
+  top: 84%;
+  left: 44% !important;
 }
-@media (max-width: 444px) {
-  .theme-switcher {
-    left: 65% !important;
+
+@media (max-width: 768px) {
+  body:has(.hamburgerMenu input:not(:checked)) .theme-switcher {
+    visibility: hidden;
   }
 }
