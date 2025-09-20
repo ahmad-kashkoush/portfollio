@@ -15,6 +15,10 @@ const navLinks = [
     href: "#featured-projects",
   },
   {
+    label: "open source",
+    href: "#open-source",
+  },
+  {
     label: "contact",
     href: "#contact",
   },

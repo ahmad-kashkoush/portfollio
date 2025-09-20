@@ -19,7 +19,8 @@ section > .container {
 .featured-projects h2,
 .contact h2,
 .skills h2,
-.experience h2 {
+.experience h2
+,.open-source h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
   text-align: center;

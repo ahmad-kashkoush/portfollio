@@ -9,6 +9,7 @@ import { useState } from "react";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 import Skills from "./components/Skills-2";
 import Experience from "./components/Experience";
+import OpenSource from "./components/OpenSource";
 
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -26,6 +27,7 @@ function App() {
         <OtherProjects />
         {/* <AboutMe /> */}
         <Skills />
+        <OpenSource />
         <Contact />
         <Footer />
       </main>
