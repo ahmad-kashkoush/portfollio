@@ -17,11 +17,18 @@ export default function Hero() {
         >
           {/* Content  */}
           <div className="hero-content">
-            <h1>ahmed kashkoush 👋</h1>
-            <h2>frontend developer</h2>
-            <p>
-              Front-end developer dedicated to design and creative solutions.
-            </p>
+            <h1>Hi 👋, I'm Ahmed Kashkoush</h1>
+            <h2>A full-stack Software Engineer</h2>
+            <ul className="hero-list">
+              {/* <li>I have experience in building complex web applications.</li>
+              <li>I was selected for GSoC 2025 at GitLab to implement Git operations that impacted thousands of users who use the Web IDE.</li>
+              <li>I am passionate about learning new technologies and contributing to open source.</li> */}
+              <li>Built complex web apps (React, Next.js, Node.js).</li>
+              <li>Selected for GSoC 2025 at GitLab → delivered Git operations to thousands of IDE users.</li>
+              <li>Open-source contributor, passionate about learning new technologies.</li>
+            </ul>
+            <p className="hero-description">
+              Fullstack engineer with experience building scalable apps, selected for GSoC 2025 at GitLab, and passionate about open source.</p>
           </div>
           <a
             href="https://ahmad-kashkoush.github.io/ahmad-kashkoush/CV/Ahmed_Kashkoush_Resume.pdf"
@@ -29,15 +36,14 @@ export default function Hero() {
             target="_blank"
           >
             View Resume
-            <i className="fa-solid fa-share-from-square " style={{marginLeft:"10px"}}></i>
+            <i className="fa-solid fa-share-from-square " style={{ marginLeft: "10px" }}></i>
           </a>
           <Social />
         </div>
         {/* Image */}
         <div
-          className={`hero-image right-translate ${
-            visibleRef.current || visible ? "get-from-side" : ""
-          }`}
+          className={`hero-image right-translate ${visibleRef.current || visible ? "get-from-side" : ""
+            }`}
         ></div>
         <TechStack visible={visible || visibleRef.current} />
       </div>

@@ -8,7 +8,7 @@ const socialIcons = [
   },
   {
     id: 2,
-    link: "https://www.linkedin.com/in/ahmed-kashkoush-9658a9265/",
+    link: "https://www.linkedin.com/in/ahmad-kashkoush/",
     img: "icons/linkedin.svg",
     alt: "Linkedin",
   },

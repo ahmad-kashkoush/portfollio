@@ -13,6 +13,21 @@
     // height: 142vh;
   }
 }
+
+.hero-list {
+  display: block; /* Show list by default (larger screens) */
+}
+
+.hero-list li{
+  list-style: initial;
+  margin-left: 1rem;
+  max-width: 600px;
+}
+
+.hero-description {
+  display: none; /* Hide description by default (larger screens) */
+}
+
 .hero-wrapper {
   display: flex;
   justify-content: space-between;
@@ -29,6 +44,14 @@
     align-items: center;
     text-align: center;
     gap: 2rem;
+  }
+  
+  .hero-list {
+    display: none; /* Hide list on mobile */
+  }
+  
+  .hero-description {
+    display: block; /* Show description on mobile */
   }
 }
 //
