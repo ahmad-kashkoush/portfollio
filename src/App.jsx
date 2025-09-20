@@ -2,7 +2,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import AboutMe from "./components/AboutMe";
-import Projects from "./components/Projects";
+import {OtherProjects, FeaturedProjects } from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { useState } from "react";
@@ -22,9 +22,10 @@ function App() {
       <main>
         <Hero />
         <Experience />
-        <AboutMe />
+        <FeaturedProjects />
+        <OtherProjects />
+        {/* <AboutMe /> */}
         <Skills />
-        <Projects />
         <Contact />
         <Footer />
       </main>

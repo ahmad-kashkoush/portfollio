@@ -136,3 +136,273 @@
 .project-links a:hover svg {
   color: var(--color-accent);
 }
+
+// Featured Projects - About Me style layout
+.featured-projects {
+  background-color: var(--bg-secondary);
+  color: var(--color-primary);
+  
+  .hero-wrapper {
+    margin-top: 2rem;
+    gap: 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    
+    @media (min-width: 992px) {
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+    
+    @media (min-width: 1200px) {
+      gap: 5rem;
+    }
+  }
+  
+  .featured-project-item {
+    margin-bottom: 5rem;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  // Project Description Section (Title + Summary)
+  .project-description {
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .project-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--accent-color);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    
+    @media (max-width: 768px) {
+      font-size: 1.8rem;
+    }
+  }
+  
+  .project-summary {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    line-height: 1.6;
+    color: var(--color-secondary);
+    font-weight: 500;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    @media (max-width: 768px) {
+      font-size: 1.1rem;
+    }
+  }
+  
+  .project-demo {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Standard laptop screen ratio */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    
+    @media (min-width: 992px) {
+      max-width: 600px; /* Optimal size for laptop recordings */
+    }
+    
+    &.order-1 {
+      @media (min-width: 992px) {
+        order: 1;
+      }
+    }
+    
+    &.order-2 {
+      @media (min-width: 992px) {
+        order: 2;
+      }
+    }
+  }
+  
+  .project-video,
+  .project-preview-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    background-color: var(--bg-primary);
+  }
+  
+  .project-demo-placeholder {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+    .video-placeholder-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      border-radius: 10px;
+      
+      .play-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+      
+      p {
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+    }
+  }
+  
+  // Achievements Column (simplified - only highlights now)
+  .project-achievements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+    @media (min-width: 992px) {
+      text-align: left;
+    }
+    
+    &.order-1 {
+      @media (min-width: 992px) {
+        order: 1;
+      }
+    }
+    
+    &.order-2 {
+      @media (min-width: 992px) {
+        order: 2;
+      }
+    }
+  }
+  
+  // Project Footer - Tech Stack and CTA Buttons (Centered)
+  .project-footer {
+    text-align: center;
+    margin-top: 1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .project-highlights {
+    margin-bottom: 2rem;
+    
+    h4 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--color-primary);
+    }
+    
+    ul {
+      list-style: none;
+      padding: 0;
+      
+      li {
+        margin-bottom: 0.8rem;
+        padding-left: 0;
+        line-height: 1.6;
+        font-size: 1rem;
+        color: var(--color-secondary);
+        position: relative;
+        
+        &:before {
+          content: "✦";
+          color: var(--accent-color);
+          margin-right: 0.5rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  
+  .project-tech {
+    // margin-top: 2rem;
+    
+    h4 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--color-primary);
+    }
+    
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      justify-content: center;
+      
+      .tech-tag {
+        background: var(--bg-project-card);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 25px;
+        font-size: 0.9rem;
+        font-weight: 500;
+        border: 1px solid var(--accent-color);
+        transition: all 0.3s ease;
+        
+        &:hover {
+          background: transparent;
+          color: var(--accent-color);
+        }
+      }
+    }
+  }
+  
+  .project-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    .project-link {
+      text-decoration: none;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+
+// Mobile optimizations
+@media (max-width: 767px) {
+  .featured-projects h2 {
+    font-size: 2rem;
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+  }
+  
+  .featured-project-content {
+    gap: 1.5rem;
+  }
+  
+  .project-links {
+    flex-direction: column;
+    
+    .project-link {
+      text-align: center;
+    }
+  }
+}

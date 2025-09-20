@@ -1,26 +1,26 @@
 import { useAnimateSides } from "../hooks/useAnimateNav";
+const experiences = [
+  {
+    role: "Software Engineer – Google Summer of Code",
+    company: "GitLab",
+    date: "May 2025 – Present",
+    summary:
+      "Selected as a Notable Contributor at GitLab for advancing the Web IDE with features impacting thousands of developers! 🎉 ",
+    highlights: [
+      "🚀 Implemented 'Amend & Force Push', resolving a 5+ year feature request.",
+      "🔒 Built secure 'Create' and 'Delete Branch' workflows with confirmation dialogs.",
+      "📚 Authored technical documentation for new Git features, improving accessibility.",
+    ],
+    links: [
+      { label: "📋 Final Report", url: "https://gitlab.com/ahmad-kashkoush/gsoc-2025-final-report" },
+      { label: "🏆 GitLab 18.3 Release Note", url: "https://about.gitlab.com/releases/2025/08/21/gitlab-18-3-released/#notable-contributor" },
+    ],
+  },
+];
 
 export default function Experience() {
   const { visible, containerRef, visibleRef } = useAnimateSides();
   
-  const experiences = [
-    {
-      role: "Software Engineer – Google Summer of Code",
-      company: "GitLab",
-      date: "May 2025 – Present",
-      summary:
-        "Selected as a Notable Contributor at GitLab for advancing the Web IDE with features impacting thousands of developers! 🎉 ",
-      highlights: [
-        "🚀 Implemented 'Amend & Force Push', resolving a 5+ year feature request.",
-        "🔒 Built secure 'Create' and 'Delete Branch' workflows with confirmation dialogs.",
-        "📚 Authored technical documentation for new Git features, improving accessibility.",
-      ],
-      links: [
-        { label: "📋 Final Report", url: "https://gitlab.com/ahmad-kashkoush/gsoc-2025-final-report" },
-        { label: "🏆 GitLab 18.3 Release Note", url: "https://about.gitlab.com/releases/2025/08/21/gitlab-18-3-released/#notable-contributor" },
-      ],
-    },
-  ];
 
   return (
     <section ref={containerRef} className="experience" id="experience">

@@ -16,7 +16,7 @@ const navLinks = [
   },
   {
     label: "projects",
-    href: "#projects",
+    href: "#featured-projects",
   },
   {
     label: "contact",
