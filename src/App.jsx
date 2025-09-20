@@ -7,7 +7,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { useState } from "react";
 import { ThemeSwitcher } from "./ThemeSwitcher";
-import Skills from "./components/Skills";
+import Skills from "./components/Skills-2";
 import Experience from "./components/Experience";
 
 function App() {
