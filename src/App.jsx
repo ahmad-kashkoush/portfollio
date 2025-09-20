@@ -10,6 +10,7 @@ import { ThemeSwitcher } from "./ThemeSwitcher";
 import Skills from "./components/Skills-2";
 import Experience from "./components/Experience";
 import OpenSource from "./components/OpenSource";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -28,6 +29,7 @@ function App() {
         {/* <AboutMe /> */}
         <Skills />
         <OpenSource />
+        <Testimonials />
         <Contact />
         <Footer />
       </main>

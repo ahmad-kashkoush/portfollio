@@ -22,7 +22,7 @@ export const openSourceContributions = [
     {
         project: "Stdlib",
         url: "https://github.com/stdlib-js",
-        logo: "/icons/stdlib.svg",
+        logo: "icons/stdlib.svg",
         summary: "JavaScript and Node.js scientific computing library.",
         highlights: [
             "Added `include()` method to `fixedEndianArray`. (Pull request: [PR](https://github.com/stdlib-js/stdlib/pull/3283))",

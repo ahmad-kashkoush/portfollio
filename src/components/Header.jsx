@@ -19,6 +19,10 @@ const navLinks = [
     href: "#open-source",
   },
   {
+    label: "testimonials",
+    href: "#testimonials",
+  },
+  {
     label: "contact",
     href: "#contact",
   },
