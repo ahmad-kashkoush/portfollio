@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import { useState } from "react";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 import Skills from "./components/Skills";
+import Experience from "./components/Experience";
 
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -20,6 +21,7 @@ function App() {
       <ThemeSwitcher onClick={toggleTheme} theme={theme} />
       <main>
         <Hero />
+        <Experience />
         <AboutMe />
         <Skills />
         <Projects />
